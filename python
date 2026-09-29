@@ -1,1 +1,23 @@
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+age = input("Enter your age: ")
 
+full_name = first_name + " " + last_name
+
+name_length = len(full_name)
+
+space_position = full_name.find(" ")
+
+age_integer = int(age)
+age_decimal = float(age)
+
+username = first_name[0] + last_name + str(age_integer)
+
+username = username.lower()
+
+print("Full name:", full_name)
+print("Length of full name:", name_length)
+print("Position of space:", space_position)
+print("Age as a whole number:", age_integer)
+print("Age as a decimal:", age_decimal)
+print("Username:", username)
